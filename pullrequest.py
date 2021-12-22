@@ -1,4 +1,5 @@
 from flask import request
+print 'test'
 print 'test-test-test'
 print 'new-test'
 print 'test'
