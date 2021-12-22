@@ -47,5 +47,5 @@ def index7():
 
 @app.route('/')
 def index8():
-    module = request.args.get("module")
-    exec("import urllib%s as urllib" % module) # Noncompliant\
+    from OpenSSL import SSL
+    SSL.Context(SSL.SSLv3_METHOD)  # Noncompliant   
