@@ -32,3 +32,8 @@ def index5():
 def index6():
     module = request.args.get("module")
     exec("import urllib%s as urllib" % module) # Noncompliant\
+
+@app.route('/')
+def index7():
+    module = request.args.get("module")
+    exec("import urllib%s as urllib" % module) # Noncompliant\
