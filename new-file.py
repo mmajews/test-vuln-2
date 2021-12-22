@@ -1,5 +1,7 @@
 from flask import request
 
+print 'test'
+
 @app.route('/')
 def index():
     module = request.args.get("module")
